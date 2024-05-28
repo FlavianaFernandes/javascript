@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Dom</title>
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            font: normal 18px arial;
+        }
+
+        div#container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div#area {
+            background-color: rgb(51, 153, 51);
+            color: white;
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            align-content: center;
+            text-align: center;          
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"> <!-- forma de criar função pelo HTML -->
+            Interaja...
+        </div>
+    </div>
+
+   
+    <script>
+        var area = window.document.getElementById('area')
+        
+        /* criar a função pelo próprio JS. Retira os comando onclick, onmouseenter e onmouseout do HTML e usa as linhas abaixo:
+        
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair) 
+        */
+        
+        function clicar() {
+            area.innerText = 'Você clicou!!'
+            area.style.backgroundColor = 'red'
+        }
+
+        function entrar() {
+            area.innerText = 'Você entrou!'
+        }
+
+        function sair () {
+            area.innerText = 'Você saiu!'
+            area.style.backgroundColor = 'rgb(51, 153, 51)'
+        }            
+        
+    </script>
+</body>
+</html>

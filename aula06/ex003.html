@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        /* 
+        (number + number) adição
+        (string + string) concatenação 
+        
+        1º exemplo: os valores não foram convertidos para number e precisa haver essa conversão. o prompt, por padrão, retorna uma string e não um number, por isso não houve adição e sim concatenação
+
+        var n1 = window.prompt('Digite o primeiro número ')
+        var n2 = window.prompt('Digite o segundo número ')
+
+        var s = n1 + n2
+
+        window.alert('A soma dos números é igual a ' + s) 
+        */
+
+
+
+        /* 
+        2º exemplo: os valores foram convertidos para number inteiros e houve adição.
+
+        var n1 = Number.parseInt(window.prompt('Digite o primeiro número '))
+        var n2 = Number.parseInt(window.prompt('Digite o segundo número '))
+
+        var s = n1 + n2
+
+        window.alert('A soma dos números é igual a ' + s)  
+        */
+
+
+
+        /*  
+        3º exemplo: os valores foram convertidos para number reais(decimais) e houve adição.
+         var n1 = Number.parseFloat(window.prompt('Digite o primeiro número '))
+         var n2 = Number.parseFloat(window.prompt('Digite o segundo número '))
+ 
+         var s = n1 + n2
+ 
+         window.alert('A soma dos números é igual a ' + s)  
+         */
+
+
+
+        // 4º exemplo: os valores são convertidos pelo próprio Js, já que não ficou definido se os números são inteiros ou reais
+
+        var n1 = Number(window.prompt('Digite o primeiro número '))
+        var n2 = Number(window.prompt('Digite o segundo número '))
+
+        var s = n1 + n2
+
+        window.alert(`A soma dos números é igual a ${s}`) /* usando o template string ${} */
+
+    </script>
+</body>
+
+</html>
