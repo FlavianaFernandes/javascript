@@ -1,1 +1,1 @@
-Estou aprendendo JavaScript pelo canal CursoemVideo
+Estou aprendendo JavaScript pelo canal CursoemVideo!
