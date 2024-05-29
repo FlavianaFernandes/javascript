@@ -24,19 +24,19 @@
 <body>
     <h1>Somando valores</h1>
     
-    <input type="number" name="txtn1" id="txtn1"> +   <!-- criar os dois inputs para receber os valores -->
+    <input type="number" name="txtn1" id="txtn01"> +   <!-- criar os dois inputs para receber os valores -->
     
-    <input type="number" name="txtn2" id="txtn2"> =   <!-- criar os dois inputs para receber os valores -->
+    <input type="number" name="txtn2" id="txtn02"> =   <!-- criar os dois inputs para receber os valores -->
 
     <input type="button" value="Somar" onclick="somar()">  <!-- criar o input do tipo botão para mostrar o resultado -->
-   
+
     <div id="resultado">Resultado: </div>
 
     <script>
         function somar() {
-            var n1 = Number(document.querySelector('input#txtn1'). value); /* Pedir o número e já fazer a conversão de 'string' para 'number'. Importante declarar apenas 'number' ao invés de 'parseInt' ou 'parseFloat', pois assim o próprio JS se vira para converter inteiros e reais. */
+            var n1 = Number(document.querySelector('input#txtn01'). value); /* Pedir o número e já fazer a conversão de 'string' para 'number'. Importante declarar apenas 'number' ao invés de 'parseInt' ou 'parseFloat', pois assim o próprio JS se vira para converter inteiros e reais. */
 
-            var n2 = Number(document.querySelector('input#txtn2').value);
+            var n2 = Number(document.querySelector('input#txtn02').value);
 
             var res = n1 + n2; /* criar a variável para somar os dois valores recebidos */
 
