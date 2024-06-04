@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Preencha com suas informações</h1>
+    <p>Escreva de qual país você é: <input type="text" name="pais" id="pais"></p>
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="nacionalidade">
+
+    </div>
+
+    <script>
+        var país = window.document.querySelector('input#pais');
+
+        var nacionalidade = window.document.querySelector('div#nacionalidade');
+        
+        function verificar(){
+            if(país.value.toLowerCase() == 'brasil') { // to.LowerCase() foi usado para converter todos os caracteres de uma string para letras minúsculas. É útil para fazer comparações de strings, ou seja, sem levar em conta diferenças entre letras maiúsculas e minúsculas.
+                nacionalidade.innerHTML = `<p>Você é brasileiro!`
+            } else {
+                nacionalidade.innerHTML = `<p>Você é estrangeiro!`
+            }
+        }
+    </script>
+</body>
+</html>

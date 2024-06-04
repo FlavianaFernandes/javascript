@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+    <style>
+        div#res {            
+            width: 450px;
+            margin-top: 20px;
+            padding: 10px;
+        }
+    </style>
+ </head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <p>Velocidade do carro: <input type="number" name="txtvel" id="txtvel">KM/h.</p>
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+       
+    </div>
+
+    <script>
+
+        function calcular() {
+        var txtv = window.document.querySelector('input#txtvel'); //liga o input number ao JS
+
+        var res = window.document.querySelector('div#res'); // serve para pegar o que tiver na div 'res'
+
+        var vel = Number(txtv.value); //criou a variável vel para pegar o valor de txtvel e transformar em número
+
+        res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}Km/h</strong>.</p>` // serve para escrever dentro da div res
+               
+        if(vel > 60){
+            res.innerHTML += `Você está <strong>MULTADO(A)</strong> por excesso de velocidade!` // o símbolo de += é para poder adicionar mais um parágrafo, se colasse somente == iria substituir um parágrafo pelo outro.
+        }
+
+        res.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>` // o símbolo de += é para poder adicionar mais um parágrafo, se colasse somente == iria substituir um parágrafo pelo outro.
+        }
+    </script>
+</body>
+</html>
