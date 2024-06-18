@@ -8,8 +8,9 @@
 <body>
     <h1>Preencha com suas informações</h1>
     <p>Escreva de qual país você é: <input type="text" name="pais" id="pais"></p>
-    <input type="button" value="verificar" onclick="verificar()">
+    <input type="button" value="Verificar" onclick="verificar()">
     <div id="nacionalidade">
+        
 
     </div>
 
@@ -20,9 +21,9 @@
         
         function verificar(){
             if(país.value.toLowerCase() == 'brasil') { // to.LowerCase() foi usado para converter todos os caracteres de uma string para letras minúsculas. É útil para fazer comparações de strings, ou seja, sem levar em conta diferenças entre letras maiúsculas e minúsculas.
-                nacionalidade.innerHTML = `<p>Você é brasileiro!`
+                nacionalidade.innerHTML = `<p>Você é brasileiro(a)!`
             } else {
-                nacionalidade.innerHTML = `<p>Você é estrangeiro!`
+                nacionalidade.innerHTML = `<p>Você é estrangeiro(a)!`
             }
         }
     </script>
