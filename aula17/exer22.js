@@ -19,5 +19,5 @@ console.log(pessoa.idade);
 
 // console.log(pessoa.nome, pessoa.altura, pessoa.idade); --> também podemos mostrar tudo em um só console
 
-pessoa.engordar(9) // aumentei mais 9kg e adicionei ao pessoa que tinha antes
+pessoa.engordar(9) // aumentei mais 9kg e adicionei ao peso que tinha antes
 console.log(pessoa.peso) // mostrará o peso atual
